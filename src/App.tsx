@@ -5,18 +5,18 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm fixed w-full top-0 z-50">
+      <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <Scale className="h-8 w-8 text-blue-900" />
-              <span className="text-2xl font-bold text-blue-900">Sterling & Associates</span>
+              <Scale className="h-8 w-8 text-black" />
+              <span className="text-2xl font-bold text-black">Sterling & Associates</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium">Services</a>
-              <a href="#about" className="text-gray-700 hover:text-blue-900 font-medium">About</a>
-              <a href="#testimonials" className="text-gray-700 hover:text-blue-900 font-medium">Testimonials</a>
-              <button className="bg-amber-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-amber-600 transition-colors">
+              <a href="#services" className="text-gray-700 hover:text-black font-medium">Services</a>
+              <a href="#about" className="text-gray-700 hover:text-black font-medium">About</a>
+              <a href="#testimonials" className="text-gray-700 hover:text-black font-medium">Testimonials</a>
+              <button className="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
                 Free Consultation
               </button>
             </div>
@@ -25,33 +25,33 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900">
+      <section className="pt-20 pb-16 bg-gradient-to-br from-black via-gray-900 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 Protecting Your Rights.
-                <span className="text-amber-400"> Fighting For Justice.</span>
+                <span className="text-yellow-400"> Fighting For Justice.</span>
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                 With over 25 years of experience, Sterling & Associates delivers exceptional legal representation across corporate law, personal injury, and family matters. We don't just practice law—we protect your future.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button className="bg-amber-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-amber-600 transition-all transform hover:scale-105 flex items-center justify-center">
+                <button className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center justify-center">
                   Get Free Consultation
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all">
+                <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition-all">
                   Call (555) 123-4567
                 </button>
               </div>
-              <div className="flex items-center space-x-8 text-blue-100">
+              <div className="flex items-center space-x-8 text-gray-300">
                 <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-amber-400" />
+                  <CheckCircle className="h-5 w-5 text-yellow-400" />
                   <span>No Fee Unless We Win</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-amber-400" />
+                  <CheckCircle className="h-5 w-5 text-yellow-400" />
                   <span>24/7 Support</span>
                 </div>
               </div>
@@ -63,19 +63,19 @@ function App() {
                   <input
                     type="text"
                     placeholder="Full Name"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   />
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   />
                   <input
                     type="tel"
                     placeholder="Phone Number"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   />
-                  <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
                     <option>Select Practice Area</option>
                     <option>Personal Injury</option>
                     <option>Corporate Law</option>
@@ -85,11 +85,11 @@ function App() {
                   <textarea
                     placeholder="Brief description of your case"
                     rows={3}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   ></textarea>
                   <button
                     type="submit"
-                    className="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+                    className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
                   >
                     Get Free Consultation
                   </button>
@@ -113,37 +113,37 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: <Shield className="h-12 w-12 text-amber-500" />,
+                icon: <Shield className="h-12 w-12 text-yellow-500" />,
                 title: "Personal Injury",
                 description: "Maximum compensation for accidents, medical malpractice, and wrongful death cases.",
                 features: ["Auto Accidents", "Slip & Fall", "Medical Malpractice", "Wrongful Death"]
               },
               {
-                icon: <Scale className="h-12 w-12 text-amber-500" />,
+                icon: <Scale className="h-12 w-12 text-yellow-500" />,
                 title: "Corporate Law",
                 description: "Strategic business legal counsel for companies of all sizes.",
                 features: ["Contract Negotiation", "Business Formation", "Mergers & Acquisitions", "Compliance"]
               },
               {
-                icon: <Users className="h-12 w-12 text-amber-500" />,
+                icon: <Users className="h-12 w-12 text-yellow-500" />,
                 title: "Family Law",
                 description: "Compassionate representation for your family's most important matters.",
                 features: ["Divorce", "Child Custody", "Adoption", "Prenuptial Agreements"]
               },
               {
-                icon: <Award className="h-12 w-12 text-amber-500" />,
+                icon: <Award className="h-12 w-12 text-yellow-500" />,
                 title: "Criminal Defense",
                 description: "Aggressive defense strategies to protect your rights and freedom.",
                 features: ["DUI Defense", "Drug Crimes", "White Collar", "Appeals"]
               },
               {
-                icon: <MapPin className="h-12 w-12 text-amber-500" />,
+                icon: <MapPin className="h-12 w-12 text-yellow-500" />,
                 title: "Real Estate Law",
                 description: "Complete legal support for all your property transactions and disputes.",
                 features: ["Property Transactions", "Title Issues", "Landlord/Tenant", "Construction"]
               },
               {
-                icon: <CheckCircle className="h-12 w-12 text-amber-500" />,
+                icon: <CheckCircle className="h-12 w-12 text-yellow-500" />,
                 title: "Estate Planning",
                 description: "Secure your legacy with comprehensive estate planning services.",
                 features: ["Wills & Trusts", "Probate", "Asset Protection", "Tax Planning"]
@@ -161,7 +161,7 @@ function App() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                <button className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
                   Learn More & Get Help
                 </button>
               </div>
@@ -180,19 +180,19 @@ function App() {
           
           <div className="grid md:grid-cols-4 gap-8 mb-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">$50M+</div>
+              <div className="text-4xl font-bold text-black mb-2">$50M+</div>
               <div className="text-gray-600">Recovered for Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">25+</div>
+              <div className="text-4xl font-bold text-black mb-2">25+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">1000+</div>
+              <div className="text-4xl font-bold text-black mb-2">1000+</div>
               <div className="text-gray-600">Cases Won</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">98%</div>
+              <div className="text-4xl font-bold text-black mb-2">98%</div>
               <div className="text-gray-600">Success Rate</div>
             </div>
           </div>
@@ -202,15 +202,15 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Certifications & Awards</h3>
               <div className="space-y-3">
                 <div className="flex items-center justify-center space-x-2">
-                  <Award className="h-5 w-5 text-amber-500" />
+                  <Award className="h-5 w-5 text-yellow-500" />
                   <span>Super Lawyers Recognition</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                  <Award className="h-5 w-5 text-amber-500" />
+                  <Award className="h-5 w-5 text-yellow-500" />
                   <span>AV Preeminent Rating</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                  <Award className="h-5 w-5 text-amber-500" />
+                  <Award className="h-5 w-5 text-yellow-500" />
                   <span>Best Lawyers in America</span>
                 </div>
               </div>
@@ -286,7 +286,7 @@ function App() {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-amber-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-amber-600 transition-colors">
+            <button className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors">
               Start Your Success Story Today
             </button>
           </div>
@@ -294,14 +294,14 @@ function App() {
       </section>
 
       {/* Lead Magnet Section */}
-      <section className="py-20 bg-blue-900">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-white mb-6">
                 Free Legal Guide: "10 Critical Mistakes That Could Destroy Your Case"
               </h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-gray-300 mb-8">
                 Download our comprehensive guide and discover insider secrets that could make or break your legal case. Learn what insurance companies don't want you to know.
               </p>
               <ul className="space-y-4 mb-8">
@@ -313,8 +313,8 @@ function App() {
                   "Questions to ask potential lawyers"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="h-6 w-6 text-amber-400 flex-shrink-0" />
-                    <span className="text-blue-100">{item}</span>
+                    <CheckCircle className="h-6 w-6 text-yellow-400 flex-shrink-0" />
+                    <span className="text-gray-300">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -322,7 +322,7 @@ function App() {
             
             <div className="bg-white p-8 rounded-2xl shadow-2xl">
               <div className="text-center mb-6">
-                <Download className="h-16 w-16 text-blue-900 mx-auto mb-4" />
+                <Download className="h-16 w-16 text-black mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Get Your Free Guide</h3>
                 <p className="text-gray-600">No cost, no obligation - just valuable insights</p>
               </div>
@@ -331,21 +331,21 @@ function App() {
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500"
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500"
                 />
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500"
                 />
                 <button
                   type="submit"
-                  className="w-full bg-amber-500 text-white py-4 rounded-lg text-lg font-semibold hover:bg-amber-600 transition-colors flex items-center justify-center"
+                  className="w-full bg-yellow-500 text-black py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors flex items-center justify-center"
                 >
                   <Download className="mr-2 h-5 w-5" />
                   Download Free Guide Now
@@ -361,27 +361,27 @@ function App() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-500 to-amber-600">
+      <section className="py-20 bg-gradient-to-r from-yellow-500 to-yellow-400">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-black mb-6">
             Don't Wait - Your Case Has a Deadline
           </h2>
-          <p className="text-xl text-amber-100 mb-8">
+          <p className="text-xl text-black mb-8">
             Every day you wait could jeopardize your case. Get experienced legal representation working for you today.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button className="bg-white text-amber-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
+            <button className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
               <Calendar className="mr-2 h-5 w-5" />
               Schedule Free Consultation
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-amber-600 transition-all flex items-center justify-center">
+            <button className="border-2 border-black text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition-all flex items-center justify-center">
               <Phone className="mr-2 h-5 w-5" />
               Call (555) 123-4567
             </button>
           </div>
           
-          <p className="text-amber-100">
+          <p className="text-black">
             Available 24/7 • Free Consultation • No Fee Unless We Win
           </p>
         </div>
@@ -393,7 +393,7 @@ function App() {
           <div className="grid lg:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Scale className="h-8 w-8 text-amber-500" />
+                <Scale className="h-8 w-8 text-yellow-500" />
                 <span className="text-2xl font-bold">Sterling & Associates</span>
               </div>
               <p className="text-gray-400 mb-4">
@@ -401,15 +401,15 @@ function App() {
               </p>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-amber-500" />
+                  <Phone className="h-4 w-4 text-yellow-500" />
                   <span>(555) 123-4567</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Mail className="h-4 w-4 text-amber-500" />
+                  <Mail className="h-4 w-4 text-yellow-500" />
                   <span>info@sterlinglaw.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <MapPin className="h-4 w-4 text-amber-500" />
+                  <MapPin className="h-4 w-4 text-yellow-500" />
                   <span>123 Legal Street, City, State 12345</span>
                 </div>
               </div>
@@ -438,7 +438,7 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Emergency Contact</h4>
               <p className="text-gray-400 mb-4">Available 24/7 for urgent legal matters</p>
-              <button className="bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition-colors w-full">
+              <button className="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors w-full">
                 Call Now: (555) 123-4567
               </button>
             </div>
