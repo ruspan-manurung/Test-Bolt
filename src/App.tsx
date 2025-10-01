@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Scale, Shield, Award, Users, ChevronRight, Star, CheckCircle, Download, Calendar } from 'lucide-react';
+import { Phone, Mail, MapPin, Scale, Shield, Award, Users, ChevronRight, Star, CheckCircle, Download, Calendar, Waves } from 'lucide-react';
 
 function App() {
   return (
@@ -9,8 +9,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <Scale className="h-8 w-8 text-black" />
-              <span className="text-2xl font-bold text-black">Sterling & Associates</span>
+              <Waves className="h-10 w-10 text-yellow-500" />
+              <span className="text-3xl font-bold text-black tracking-tight">ORCA LEGAL</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-black font-medium">Services</a>
@@ -34,7 +34,7 @@ function App() {
                 <span className="text-yellow-400"> Fighting For Justice.</span>
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                With over 25 years of experience, Sterling & Associates delivers exceptional legal representation across corporate law, personal injury, and family matters. We don't just practice law—we protect your future.
+                With over 25 years of experience, Orca Legal delivers exceptional legal representation across corporate law, personal injury, and family matters. We don't just practice law—we protect your future.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <button className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center justify-center">
@@ -174,7 +174,7 @@ function App() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Sterling & Associates?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Orca Legal?</h2>
             <p className="text-xl text-gray-600">Our track record speaks for itself</p>
           </div>
           
@@ -251,7 +251,7 @@ function App() {
                 name: "Sarah Mitchell",
                 case: "Personal Injury",
                 rating: 5,
-                text: "Sterling & Associates fought tirelessly for my case. Their expertise and dedication resulted in a settlement that exceeded my expectations. I couldn't have asked for better representation.",
+                text: "Orca Legal fought tirelessly for my case. Their expertise and dedication resulted in a settlement that exceeded my expectations. I couldn't have asked for better representation.",
                 result: "$1.2M Settlement"
               },
               {
@@ -265,7 +265,7 @@ function App() {
                 name: "Maria Rodriguez",
                 case: "Family Law",
                 rating: 5,
-                text: "During the most difficult time of my life, Sterling & Associates provided compassionate yet aggressive representation. They secured a favorable custody arrangement for my children.",
+                text: "During the most difficult time of my life, Orca Legal provided compassionate yet aggressive representation. They secured a favorable custody arrangement for my children.",
                 result: "Full Custody Awarded"
               }
             ].map((testimonial, index) => (
@@ -393,8 +393,8 @@ function App() {
           <div className="grid lg:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Scale className="h-8 w-8 text-yellow-500" />
-                <span className="text-2xl font-bold">Sterling & Associates</span>
+                <Waves className="h-10 w-10 text-yellow-500" />
+                <span className="text-3xl font-bold tracking-tight">ORCA LEGAL</span>
               </div>
               <p className="text-gray-400 mb-4">
                 Protecting your rights and fighting for justice since 1998.
@@ -406,7 +406,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-yellow-500" />
-                  <span>info@sterlinglaw.com</span>
+                  <span>info@orcalegal.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4 text-yellow-500" />
@@ -445,8 +445,11 @@ function App() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Sterling & Associates. All rights reserved. | Attorney Advertising</p>
+            <p>&copy; 2025 Orca Legal. All rights reserved. | Attorney Advertising</p>
           </div>
+                  <span className="text-2xl font-black text-white tracking-wider leading-none">ORCA</span>
+                  <span className="text-sm font-light text-gray-300 tracking-widest -mt-1">LEGAL</span>
+                </div>
         </div>
       </footer>
     </div>
