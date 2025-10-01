@@ -8,14 +8,17 @@ function App() {
       <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <Waves className="h-10 w-10 text-yellow-500" />
-              <span className="text-3xl font-bold text-black tracking-tight">ORCA LEGAL</span>
+            <div className="flex items-center space-x-3">
+              <Waves className="h-12 w-12 text-yellow-500" />
+              <div className="flex flex-col">
+                <span className="text-3xl font-black text-black tracking-wider leading-none">ORCA</span>
+                <span className="text-sm font-light text-gray-600 tracking-widest -mt-1">LEGAL</span>
+              </div>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#services" className="text-gray-700 hover:text-black font-medium">Services</a>
-              <a href="#about" className="text-gray-700 hover:text-black font-medium">About</a>
-              <a href="#testimonials" className="text-gray-700 hover:text-black font-medium">Testimonials</a>
+              <a href="#services" className="text-gray-700 hover:text-black font-medium transition-colors">Services</a>
+              <a href="#about" className="text-gray-700 hover:text-black font-medium transition-colors">About</a>
+              <a href="#testimonials" className="text-gray-700 hover:text-black font-medium transition-colors">Testimonials</a>
               <button className="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
                 Free Consultation
               </button>
@@ -25,7 +28,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-black via-gray-900 to-black">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-black via-gray-900 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -33,7 +36,7 @@ function App() {
                 Protecting Your Rights.
                 <span className="text-yellow-400"> Fighting For Justice.</span>
               </h1>
-              <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-100 mb-8 leading-relaxed">
                 With over 25 years of experience, Orca Legal delivers exceptional legal representation across corporate law, personal injury, and family matters. We don't just practice law—we protect your future.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -392,9 +395,12 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
+              <div className="flex items-center space-x-3 mb-4">
                 <Waves className="h-10 w-10 text-yellow-500" />
-                <span className="text-3xl font-bold tracking-tight">ORCA LEGAL</span>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-black text-white tracking-wider leading-none">ORCA</span>
+                  <span className="text-sm font-light text-gray-300 tracking-widest -mt-1">LEGAL</span>
+                </div>
               </div>
               <p className="text-gray-400 mb-4">
                 Protecting your rights and fighting for justice since 1998.
@@ -447,9 +453,6 @@ function App() {
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Orca Legal. All rights reserved. | Attorney Advertising</p>
           </div>
-                  <span className="text-2xl font-black text-white tracking-wider leading-none">ORCA</span>
-                  <span className="text-sm font-light text-gray-300 tracking-widest -mt-1">LEGAL</span>
-                </div>
         </div>
       </footer>
     </div>
