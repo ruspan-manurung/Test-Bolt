@@ -401,6 +401,7 @@ function App() {
                   <span className="text-2xl font-black text-white tracking-wider leading-none">ORCA</span>
                   <span className="text-sm font-light text-gray-300 tracking-widest -mt-1">LEGAL</span>
                 </div>
+              </div>
               <p className="text-gray-400 mb-4">
                 Protecting your rights and fighting for justice since 1998.
               </p>
