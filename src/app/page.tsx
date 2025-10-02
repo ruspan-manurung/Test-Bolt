@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Scale, Shield, Award, Users, ChevronRight, Star, CheckCircle, Download, Calendar, Waves } from 'lucide-react'
+import { Phone, Mail, MapPin, Scale, Shield, Award, Users, ChevronRight, Star, CircleCheck as CheckCircle, Download, Calendar, Waves } from 'lucide-react'
 import { LeadCaptureForm } from '@/components/forms/LeadCaptureForm'
 import { NewsletterForm } from '@/components/forms/NewsletterForm'
 import { Button } from '@/components/ui/Button'
