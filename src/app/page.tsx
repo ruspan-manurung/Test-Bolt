@@ -1,7 +1,9 @@
-import React from 'react';
-import { Phone, Mail, MapPin, Scale, Shield, Award, Users, ChevronRight, Star, CheckCircle, Download, Calendar, Waves } from 'lucide-react';
+import { Phone, Mail, MapPin, Scale, Shield, Award, Users, ChevronRight, Star, CheckCircle, Download, Calendar, Waves } from 'lucide-react'
+import { LeadCaptureForm } from '@/components/forms/LeadCaptureForm'
+import { NewsletterForm } from '@/components/forms/NewsletterForm'
+import { Button } from '@/components/ui/Button'
 
-function App() {
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -19,9 +21,9 @@ function App() {
               <a href="#services" className="text-gray-700 hover:text-black font-medium transition-colors">Services</a>
               <a href="#about" className="text-gray-700 hover:text-black font-medium transition-colors">About</a>
               <a href="#testimonials" className="text-gray-700 hover:text-black font-medium transition-colors">Testimonials</a>
-              <button className="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+              <Button variant="primary">
                 Free Consultation
-              </button>
+              </Button>
             </div>
           </div>
         </div>
@@ -40,13 +42,13 @@ function App() {
                 With over 25 years of experience, Orca Legal delivers exceptional legal representation across corporate law, personal injury, and family matters. We don't just practice law—we protect your future.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center justify-center">
+                <Button variant="primary" size="lg">
                   Get Free Consultation
                   <ChevronRight className="ml-2 h-5 w-5" />
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition-all">
+                </Button>
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
                   Call (555) 123-4567
-                </button>
+                </Button>
               </div>
               <div className="flex items-center space-x-8 text-gray-300">
                 <div className="flex items-center space-x-2">
@@ -62,41 +64,7 @@ function App() {
             <div className="relative">
               <div className="bg-white p-8 rounded-2xl shadow-2xl">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Quick Case Evaluation</h3>
-                <form className="space-y-4">
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                  />
-                  <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
-                    <option>Select Practice Area</option>
-                    <option>Personal Injury</option>
-                    <option>Corporate Law</option>
-                    <option>Family Law</option>
-                    <option>Criminal Defense</option>
-                  </select>
-                  <textarea
-                    placeholder="Brief description of your case"
-                    rows={3}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                  ></textarea>
-                  <button
-                    type="submit"
-                    className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
-                  >
-                    Get Free Consultation
-                  </button>
-                </form>
+                <LeadCaptureForm source="hero_form" />
               </div>
             </div>
           </div>
@@ -164,9 +132,9 @@ function App() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                <Button variant="secondary" className="w-full">
                   Learn More & Get Help
-                </button>
+                </Button>
               </div>
             ))}
           </div>
@@ -289,9 +257,9 @@ function App() {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors">
+            <Button variant="primary" size="lg">
               Start Your Success Story Today
-            </button>
+            </Button>
           </div>
         </div>
       </section>
@@ -330,30 +298,7 @@ function App() {
                 <p className="text-gray-600">No cost, no obligation - just valuable insights</p>
               </div>
               
-              <form className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500"
-                />
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500"
-                />
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500"
-                />
-                <button
-                  type="submit"
-                  className="w-full bg-yellow-500 text-black py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors flex items-center justify-center"
-                >
-                  <Download className="mr-2 h-5 w-5" />
-                  Download Free Guide Now
-                </button>
-              </form>
+              <NewsletterForm />
               
               <p className="text-xs text-gray-500 mt-4 text-center">
                 We respect your privacy. Your information is secure and will never be shared.
@@ -374,14 +319,14 @@ function App() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
+            <Button variant="secondary" size="lg">
               <Calendar className="mr-2 h-5 w-5" />
               Schedule Free Consultation
-            </button>
-            <button className="border-2 border-black text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition-all flex items-center justify-center">
+            </Button>
+            <Button variant="outline" size="lg" className="border-black text-black hover:bg-black hover:text-white">
               <Phone className="mr-2 h-5 w-5" />
               Call (555) 123-4567
-            </button>
+            </Button>
           </div>
           
           <p className="text-black">
@@ -444,9 +389,9 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Emergency Contact</h4>
               <p className="text-gray-400 mb-4">Available 24/7 for urgent legal matters</p>
-              <button className="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors w-full">
+              <Button variant="primary" className="w-full">
                 Call Now: (555) 123-4567
-              </button>
+              </Button>
             </div>
           </div>
           
@@ -456,7 +401,5 @@ function App() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
-
-export default App;
