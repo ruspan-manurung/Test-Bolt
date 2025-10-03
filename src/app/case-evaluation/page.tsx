@@ -1,5 +1,5 @@
 import { CaseEvaluationForm } from '@/components/forms/CaseEvaluationForm'
-import { Scale, Shield, Award, CheckCircle, ArrowLeft } from 'lucide-react'
+import { Scale, Shield, Award, CircleCheck as CheckCircle, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 

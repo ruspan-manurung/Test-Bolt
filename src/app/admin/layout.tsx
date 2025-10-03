@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Users, FileText, Calendar, Settings, Home } from 'lucide-react'
+import { Users, FileText, Calendar, Settings, Hop as Home } from 'lucide-react'
 
 export default function AdminLayout({
   children,
